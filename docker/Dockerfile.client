@@ -1,16 +1,15 @@
-# Dockerfile for the client
-
+# Use Golang image
 FROM golang:1.19-alpine
 
-# Set the working directory
+# Set working directory
 WORKDIR /app
 
-# Copy the source code into the container
-COPY . .
+# Copy client code
+COPY ./client /app
 
 # Install dependencies and build the client
 RUN go mod tidy
-RUN go build -o chatclient ./client/cmd/chatclient
+RUN go build -o chatclient ./cmd/chatclient
 
-# Run the client when the container starts
+# Command to run the client (it will automatically run once the container starts)
 CMD ["./chatclient"]

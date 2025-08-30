@@ -7,9 +7,18 @@ services:
       dockerfile: ./docker/Dockerfile.server
     ports:
       - "8080:8080"
+    networks:
+      - chat_network
+
   client:
     build:
       context: .
       dockerfile: ./docker/Dockerfile.client
     depends_on:
       - server
+    networks:
+      - chat_network
+
+networks:
+  chat_network:
+    driver: bridge
