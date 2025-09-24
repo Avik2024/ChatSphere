@@ -108,7 +108,7 @@ If you want to contribute to this project, feel free to fork the repository, cre
 
 ## 🏷️ **Contact**
 
-For any questions or suggestions, you can reach out to me at [your.email@example.com](mailto:avik.quantum24@gmail.com).
+For any questions or suggestions, you can reach out to me at [avik.quantum24@gmail.com](mailto:avik.quantum24@gmail.com).
 
 ---
 
